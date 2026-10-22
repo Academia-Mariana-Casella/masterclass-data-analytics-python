@@ -1,14 +1,14 @@
 -- ============================================================================
 -- Proyecto 2: Ventas por mes con SQL (PostgreSQL)
 -- Masterclass Data Analytics con Python — Academia MC
--- Parte C del guion: "Comparación con SQL" (3 min)
 --
 -- Resuelve exactamente la misma pregunta que el notebook de Pandas
 -- (notebook_pandas.ipynb), pero desde una base de datos en vez de un CSV.
 -- ============================================================================
 
 -- --------------------------------------------------------------------------
--- 0. Preparación (correr una sola vez, antes de la clase)
+-- 0. Preparación (correr una sola vez: crea la tabla y carga el CSV)
+--    Ojo: el DROP TABLE borra la tabla ventas si ya existía.
 -- --------------------------------------------------------------------------
 
 DROP TABLE IF EXISTS ventas;
@@ -102,7 +102,7 @@ GROUP BY TO_CHAR(fecha, 'YYYY-MM')
 ORDER BY mes;
 
 -- ============================================================================
--- Para la clase en vivo: mostrar el punto 3 al lado del gráfico que salió del
--- notebook de Pandas. Los números de monto_total por mes tienen que coincidir
--- (son el mismo dataset, mismo criterio de montos faltantes).
+-- Para verificar: compará el resultado del punto 3 con el gráfico y la tabla
+-- de ventas por mes del notebook de Pandas. Los montos por mes coinciden
+-- exactamente (mismo dataset, mismo criterio para los montos faltantes).
 -- ============================================================================
