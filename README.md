@@ -10,7 +10,7 @@ Los tres proyectos responden la **misma pregunta de negocio** sobre el **mismo a
 | 2 | [`analisis_sql.sql`](analisis_sql.sql) | PostgreSQL | Resuelve la misma pregunta con una consulta `GROUP BY`. Los resultados coinciden con los de Pandas |
 | 3 | [`mini_reporte_ia.ipynb`](mini_reporte_ia.ipynb) | Python + IA | Calcula 3 indicadores y le pide a una IA que redacte una explicación. Después la verifica contra los datos |
 
-Los datos están en [`ventas.csv`](ventas.csv): 1850 ventas entre septiembre de 2025 y octubre de 2026. Cada fila es un ticket.
+Los datos están en [`ventas.csv`](ventas.csv): 1850 ventas entre septiembre de 2025 y octubre de 2026. Cada fila es un ticket. Todos los datos son ficticios y se armaron para esta clase.
 
 ## Cómo usar los notebooks (Google Colab)
 
